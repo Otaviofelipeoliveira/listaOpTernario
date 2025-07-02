@@ -8,11 +8,15 @@
     // - cães grandes: fator 7.
 
     //Entrada
-
+    const idadedoCao = Number(prompt("Quantos anos seu cachorro tem?"));
+    const porte = prompt("Qual o porte do seu cachorro? (P pequeno, M médio, G grande)").toUpperCase();
 
     //Processamento
+  let idadeHumana = 0;
 
-    
+
     //Saída
+    (porte == "P") ? idadeHumana = idadedoCao * 5 : (porte == "M") ? idadeHumana = idadedoCao * 6 : (porte == "P") ? idadeHumana = idadedoCao *7 : null;
 
+      (porte == "P" || porte == "M" || porte == "G") ? alert("A idade do seu cachorro em eslaca humana é de " + idadeHumana + " anos.") : alert("Você escreveu o tamanho do seu cachorro errado.");
 </script>

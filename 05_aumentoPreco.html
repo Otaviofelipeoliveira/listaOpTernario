@@ -8,11 +8,19 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-
+let compra1 = Number (prompt("informe o preço"));
 
     //Processamento
-
+    
+    
     
     //Saída
+  (compra1 <= 280) ? compra1 = compra1 + (compra1 * 0.2)
+: (compra1 <= 700) ? compra1 = compra1 + (compra1 * 0.15)
+: (compra1 <= 1500) ? compra1 = compra1 + (compra1 * 0.1)
+: (compra1 > 1500) ? compra1 = compra1 + (compra1 * 0.05)
+: alert (`valor incopativel`);
+
+alert(compra1)
 
 </script>
